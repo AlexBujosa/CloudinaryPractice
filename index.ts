@@ -60,7 +60,7 @@ app.post(
         public_id: `assets/uploads/${videoFileName}`,
         resource_type: "video",
         chunk_size: 20000000,
-        timeout: 60000,
+        timeout: 5000,
       })
       .then((result) => console.log(result))
       .catch((error) => {
